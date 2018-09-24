@@ -31,6 +31,7 @@ extension BottlesVC: UICollectionViewDataSource {
             return cell
         } else {
             let cell = BottleCVC.dequeReusablyFor(collectionView, at: indexPath)
+            cell.delegate = self
             return cell
         }
     }
@@ -41,5 +42,11 @@ extension BottlesVC: UICollectionViewDelegateFlowLayout {
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: view.bounds.width - 16, height: indexPath.item == 0 ? 200 : 160)
+    }
+}
+
+extension BottlesVC: BottleCVCDelegate {
+    func seeDetailsTapped(at index: Int) {
+        performSegue(withIdentifier: BottlesDetailsVC.storyboardId, sender: nil)
     }
 }

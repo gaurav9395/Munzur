@@ -59,6 +59,8 @@
 		F425F1362158CE0600D268D0 /* BottleCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425F1342158CE0600D268D0 /* BottleCVC.swift */; };
 		F425F1372158CE0600D268D0 /* BottleCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F425F1352158CE0600D268D0 /* BottleCVC.xib */; };
 		F425F1392158D62F00D268D0 /* AdvertCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425F1382158D62F00D268D0 /* AdvertCVC.swift */; };
+		F4C6487721594C3E00C603D4 /* Bottles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6487521594C3E00C603D4 /* Bottles.storyboard */; };
+		F4C6487921594C6D00C603D4 /* BottlesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6487821594C6D00C603D4 /* BottlesDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +118,8 @@
 		F425F1342158CE0600D268D0 /* BottleCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleCVC.swift; sourceTree = "<group>"; };
 		F425F1352158CE0600D268D0 /* BottleCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottleCVC.xib; sourceTree = "<group>"; };
 		F425F1382158D62F00D268D0 /* AdvertCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertCVC.swift; sourceTree = "<group>"; };
+		F4C6487621594C3E00C603D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Munzur/Storyboards/Base.lproj/Bottles.storyboard; sourceTree = "<group>"; };
+		F4C6487821594C6D00C603D4 /* BottlesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,7 @@
 			children = (
 				05351A32212A6830007ADC68 /* StoryboardManager.swift */,
 				053519C5212A62F8007ADC68 /* Main.storyboard */,
+				F4C6487521594C3E00C603D4 /* Bottles.storyboard */,
 				053519D7212A633E007ADC68 /* Prelogin.storyboard */,
 				F425F12A2158C6E100D268D0 /* More.storyboard */,
 			);
@@ -305,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				05351A34212A7155007ADC68 /* BottlesVC.swift */,
+				F4C6487821594C6D00C603D4 /* BottlesDetailsVC.swift */,
 				F425F12F2158CDD000D268D0 /* Components */,
 			);
 			path = BottlesVC;
@@ -434,6 +440,7 @@
 			files = (
 				053519CC212A62FB007ADC68 /* LaunchScreen.storyboard in Resources */,
 				053519C9212A62FB007ADC68 /* Assets.xcassets in Resources */,
+				F4C6487721594C3E00C603D4 /* Bottles.storyboard in Resources */,
 				F425F12C2158C6E100D268D0 /* More.storyboard in Resources */,
 				053519D8212A633E007ADC68 /* Prelogin.storyboard in Resources */,
 				F425F1372158CE0600D268D0 /* BottleCVC.xib in Resources */,
@@ -464,6 +471,7 @@
 				05351A22212A65FF007ADC68 /* PostNotification.swift in Sources */,
 				053519F9212A659E007ADC68 /* ViewContExt+Common.swift in Sources */,
 				05351A1B212A65FF007ADC68 /* CommonMethods.swift in Sources */,
+				F4C6487921594C6D00C603D4 /* BottlesDetailsVC.swift in Sources */,
 				05351A20212A65FF007ADC68 /* LocationManager.swift in Sources */,
 				05351A1E212A65FF007ADC68 /* DirectoryManager.swift in Sources */,
 				053519F3212A659E007ADC68 /* UINavigationControllerExtension.swift in Sources */,
@@ -522,6 +530,14 @@
 				F425F12B2158C6E100D268D0 /* Base */,
 			);
 			name = More.storyboard;
+			sourceTree = "<group>";
+		};
+		F4C6487521594C3E00C603D4 /* Bottles.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4C6487621594C3E00C603D4 /* Base */,
+			);
+			name = Bottles.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -40,6 +40,9 @@
                                 <state key="normal" title="See Details">
                                     <color key="titleColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="actionSeeDetails" destination="gTV-IL-0wX" eventType="touchUpInside" id="JVd-Wh-KS0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
