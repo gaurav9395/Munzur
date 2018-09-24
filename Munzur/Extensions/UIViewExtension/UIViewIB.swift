@@ -52,7 +52,6 @@ extension UIView {
             layer.shadowOffset = newValue
         }
     }
-    
     @IBInspectable var shadowOpacity: Float {
         get {
             return layer.shadowOpacity

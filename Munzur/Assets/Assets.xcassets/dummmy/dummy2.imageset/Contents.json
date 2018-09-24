@@ -6,20 +6,16 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "masculine-avatar-user-with-suit-1.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "masculine-avatar-user-with-suit.png",
+      "filename" : "98969376_d4y_GGwMOzlZNbQPhlGYQbMTFK5DAdcPB5GrCKOy424.jpg",
       "scale" : "3x"
     }
   ],
   "info" : {
     "version" : 1,
     "author" : "xcode"
-  },
-  "properties" : {
-    "template-rendering-intent" : "template"
   }
 }
