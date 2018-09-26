@@ -10,8 +10,3 @@ extension NSNotification.Name {
     static let refreshChat = NSNotification.Name(rawValue: "refreschChatForNewMessages")
 }
 
-//MARK:- Example
-//    func postANotification() {
-//        NotificationCenter.default.post(name: .home, object: nil)
-//    }
-

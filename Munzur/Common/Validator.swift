@@ -2,8 +2,9 @@ import Foundation
 
 final public class Validator {
     
-    static let NumberSet = "0123456789"
+    static let numberSet = "0123456789"
     static let characterSet = "abcdefghijklmnopqrstuvwxyz "
+    static let alphaNumeric = "\(characterSet)\(numberSet)\(characterSet.uppercased())"
 
     /**
      Method to check if the email is valid or not.

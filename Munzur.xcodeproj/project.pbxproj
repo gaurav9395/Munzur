@@ -13,16 +13,12 @@
 		053519C9212A62FB007ADC68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 053519C8212A62FB007ADC68 /* Assets.xcassets */; };
 		053519CC212A62FB007ADC68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053519CA212A62FB007ADC68 /* LaunchScreen.storyboard */; };
 		053519D8212A633E007ADC68 /* Prelogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 053519D7212A633E007ADC68 /* Prelogin.storyboard */; };
-		053519ED212A659E007ADC68 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DA212A659E007ADC68 /* DateExtension.swift */; };
-		053519EE212A659E007ADC68 /* MKMapViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DB212A659E007ADC68 /* MKMapViewExtension.swift */; };
 		053519EF212A659E007ADC68 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DC212A659E007ADC68 /* StringExtension.swift */; };
 		053519F0212A659E007ADC68 /* UICollectionViewCellsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DD212A659E007ADC68 /* UICollectionViewCellsExtension.swift */; };
 		053519F1212A659E007ADC68 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DE212A659E007ADC68 /* UIColor+Ext.swift */; };
 		053519F2212A659E007ADC68 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519DF212A659E007ADC68 /* UIFontExtension.swift */; };
 		053519F3212A659E007ADC68 /* UINavigationControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E0212A659E007ADC68 /* UINavigationControllerExtension.swift */; };
-		053519F4212A659E007ADC68 /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E1212A659E007ADC68 /* UITabBarExtension.swift */; };
 		053519F5212A659E007ADC68 /* UITableViewCellsExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E2212A659E007ADC68 /* UITableViewCellsExtension.swift */; };
-		053519F6212A659E007ADC68 /* DoneToolBarWithoutIQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E4212A659E007ADC68 /* DoneToolBarWithoutIQ.swift */; };
 		053519F7212A659E007ADC68 /* TextField+Methods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E5212A659E007ADC68 /* TextField+Methods.swift */; };
 		053519F8212A659E007ADC68 /* ViewContExt+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E7212A659E007ADC68 /* ViewContExt+Alerts.swift */; };
 		053519F9212A659E007ADC68 /* ViewContExt+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519E8212A659E007ADC68 /* ViewContExt+Common.swift */; };
@@ -30,15 +26,11 @@
 		053519FB212A659E007ADC68 /* UIViewUseful.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519EB212A659E007ADC68 /* UIViewUseful.swift */; };
 		053519FC212A659E007ADC68 /* UIWindow+ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519EC212A659E007ADC68 /* UIWindow+ext.swift */; };
 		05351A1B212A65FF007ADC68 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053519FE212A65FF007ADC68 /* CommonMethods.swift */; };
-		05351A1C212A65FF007ADC68 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A00212A65FF007ADC68 /* Contact.swift */; };
-		05351A1D212A65FF007ADC68 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A01212A65FF007ADC68 /* ContactsManager.swift */; };
-		05351A1E212A65FF007ADC68 /* DirectoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A02212A65FF007ADC68 /* DirectoryManager.swift */; };
 		05351A1F212A65FF007ADC68 /* Algoworks.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 05351A04212A65FF007ADC68 /* Algoworks.gpx */; };
 		05351A20212A65FF007ADC68 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A05212A65FF007ADC68 /* LocationManager.swift */; };
 		05351A21212A65FF007ADC68 /* LocationUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A06212A65FF007ADC68 /* LocationUtility.swift */; };
 		05351A22212A65FF007ADC68 /* PostNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A07212A65FF007ADC68 /* PostNotification.swift */; };
 		05351A23212A65FF007ADC68 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A09212A65FF007ADC68 /* UserDefaultsManager.swift */; };
-		05351A24212A65FF007ADC68 /* UserDefaultsProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A0A212A65FF007ADC68 /* UserDefaultsProfile.swift */; };
 		05351A25212A65FF007ADC68 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A0B212A65FF007ADC68 /* Validator.swift */; };
 		05351A26212A65FF007ADC68 /* AlertConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A0D212A65FF007ADC68 /* AlertConstants.swift */; };
 		05351A27212A65FF007ADC68 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05351A0E212A65FF007ADC68 /* AppConstants.swift */; };
@@ -72,16 +64,12 @@
 		053519CB212A62FB007ADC68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		053519CD212A62FB007ADC68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		053519D7212A633E007ADC68 /* Prelogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prelogin.storyboard; sourceTree = "<group>"; };
-		053519DA212A659E007ADC68 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		053519DB212A659E007ADC68 /* MKMapViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MKMapViewExtension.swift; sourceTree = "<group>"; };
 		053519DC212A659E007ADC68 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		053519DD212A659E007ADC68 /* UICollectionViewCellsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICollectionViewCellsExtension.swift; sourceTree = "<group>"; };
 		053519DE212A659E007ADC68 /* UIColor+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		053519DF212A659E007ADC68 /* UIFontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		053519E0212A659E007ADC68 /* UINavigationControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerExtension.swift; sourceTree = "<group>"; };
-		053519E1212A659E007ADC68 /* UITabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
 		053519E2212A659E007ADC68 /* UITableViewCellsExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewCellsExtension.swift; sourceTree = "<group>"; };
-		053519E4212A659E007ADC68 /* DoneToolBarWithoutIQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneToolBarWithoutIQ.swift; sourceTree = "<group>"; };
 		053519E5212A659E007ADC68 /* TextField+Methods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TextField+Methods.swift"; sourceTree = "<group>"; };
 		053519E7212A659E007ADC68 /* ViewContExt+Alerts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewContExt+Alerts.swift"; sourceTree = "<group>"; };
 		053519E8212A659E007ADC68 /* ViewContExt+Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewContExt+Common.swift"; sourceTree = "<group>"; };
@@ -89,15 +77,11 @@
 		053519EB212A659E007ADC68 /* UIViewUseful.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewUseful.swift; sourceTree = "<group>"; };
 		053519EC212A659E007ADC68 /* UIWindow+ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+ext.swift"; sourceTree = "<group>"; };
 		053519FE212A65FF007ADC68 /* CommonMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
-		05351A00212A65FF007ADC68 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
-		05351A01212A65FF007ADC68 /* ContactsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
-		05351A02212A65FF007ADC68 /* DirectoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryManager.swift; sourceTree = "<group>"; };
 		05351A04212A65FF007ADC68 /* Algoworks.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Algoworks.gpx; sourceTree = "<group>"; };
 		05351A05212A65FF007ADC68 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		05351A06212A65FF007ADC68 /* LocationUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationUtility.swift; sourceTree = "<group>"; };
 		05351A07212A65FF007ADC68 /* PostNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostNotification.swift; sourceTree = "<group>"; };
 		05351A09212A65FF007ADC68 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
-		05351A0A212A65FF007ADC68 /* UserDefaultsProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsProfile.swift; sourceTree = "<group>"; };
 		05351A0B212A65FF007ADC68 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		05351A0D212A65FF007ADC68 /* AlertConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertConstants.swift; sourceTree = "<group>"; };
 		05351A0E212A65FF007ADC68 /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -209,14 +193,11 @@
 		053519D9212A659E007ADC68 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				053519DA212A659E007ADC68 /* DateExtension.swift */,
-				053519DB212A659E007ADC68 /* MKMapViewExtension.swift */,
 				053519DC212A659E007ADC68 /* StringExtension.swift */,
 				053519DD212A659E007ADC68 /* UICollectionViewCellsExtension.swift */,
 				053519DE212A659E007ADC68 /* UIColor+Ext.swift */,
 				053519DF212A659E007ADC68 /* UIFontExtension.swift */,
 				053519E0212A659E007ADC68 /* UINavigationControllerExtension.swift */,
-				053519E1212A659E007ADC68 /* UITabBarExtension.swift */,
 				053519E2212A659E007ADC68 /* UITableViewCellsExtension.swift */,
 				053519E3212A659E007ADC68 /* UITextFieldExtensions */,
 				053519E6212A659E007ADC68 /* UIViewController */,
@@ -230,7 +211,6 @@
 		053519E3212A659E007ADC68 /* UITextFieldExtensions */ = {
 			isa = PBXGroup;
 			children = (
-				053519E4212A659E007ADC68 /* DoneToolBarWithoutIQ.swift */,
 				053519E5212A659E007ADC68 /* TextField+Methods.swift */,
 			);
 			path = UITextFieldExtensions;
@@ -258,23 +238,12 @@
 			isa = PBXGroup;
 			children = (
 				053519FE212A65FF007ADC68 /* CommonMethods.swift */,
-				053519FF212A65FF007ADC68 /* Contacts */,
-				05351A02212A65FF007ADC68 /* DirectoryManager.swift */,
 				05351A03212A65FF007ADC68 /* Location */,
 				05351A07212A65FF007ADC68 /* PostNotification.swift */,
 				05351A08212A65FF007ADC68 /* UserDefaults */,
 				05351A0B212A65FF007ADC68 /* Validator.swift */,
 			);
 			path = Common;
-			sourceTree = "<group>";
-		};
-		053519FF212A65FF007ADC68 /* Contacts */ = {
-			isa = PBXGroup;
-			children = (
-				05351A00212A65FF007ADC68 /* Contact.swift */,
-				05351A01212A65FF007ADC68 /* ContactsManager.swift */,
-			);
-			path = Contacts;
 			sourceTree = "<group>";
 		};
 		05351A03212A65FF007ADC68 /* Location */ = {
@@ -290,8 +259,8 @@
 		05351A08212A65FF007ADC68 /* UserDefaults */ = {
 			isa = PBXGroup;
 			children = (
+				05351A0F212A65FF007ADC68 /* UserDefaultsConstant.swift */,
 				05351A09212A65FF007ADC68 /* UserDefaultsManager.swift */,
-				05351A0A212A65FF007ADC68 /* UserDefaultsProfile.swift */,
 			);
 			path = UserDefaults;
 			sourceTree = "<group>";
@@ -301,7 +270,6 @@
 			children = (
 				05351A0D212A65FF007ADC68 /* AlertConstants.swift */,
 				05351A0E212A65FF007ADC68 /* AppConstants.swift */,
-				05351A0F212A65FF007ADC68 /* UserDefaultsConstant.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -473,33 +441,25 @@
 				05351A1B212A65FF007ADC68 /* CommonMethods.swift in Sources */,
 				F4C6487921594C6D00C603D4 /* BottlesDetailsVC.swift in Sources */,
 				05351A20212A65FF007ADC68 /* LocationManager.swift in Sources */,
-				05351A1E212A65FF007ADC68 /* DirectoryManager.swift in Sources */,
 				053519F3212A659E007ADC68 /* UINavigationControllerExtension.swift in Sources */,
 				F425F11E2158B64A00D268D0 /* SignupVC.swift in Sources */,
 				053519F2212A659E007ADC68 /* UIFontExtension.swift in Sources */,
 				05351A33212A6830007ADC68 /* StoryboardManager.swift in Sources */,
 				F425F1272158B81200D268D0 /* ImageViewCVC.swift in Sources */,
-				053519EE212A659E007ADC68 /* MKMapViewExtension.swift in Sources */,
-				05351A24212A65FF007ADC68 /* UserDefaultsProfile.swift in Sources */,
 				053519F0212A659E007ADC68 /* UICollectionViewCellsExtension.swift in Sources */,
 				05351A21212A65FF007ADC68 /* LocationUtility.swift in Sources */,
 				053519EF212A659E007ADC68 /* StringExtension.swift in Sources */,
 				05351A23212A65FF007ADC68 /* UserDefaultsManager.swift in Sources */,
 				F425F1212158B6EC00D268D0 /* TutorialVC.swift in Sources */,
 				05351A27212A65FF007ADC68 /* AppConstants.swift in Sources */,
-				05351A1C212A65FF007ADC68 /* Contact.swift in Sources */,
 				05351A31212A67D8007ADC68 /* AppDelegateNavigations.swift in Sources */,
 				05E9E650212D1BA800395F60 /* HistoryVC.swift in Sources */,
-				05351A1D212A65FF007ADC68 /* ContactsManager.swift in Sources */,
 				053519F5212A659E007ADC68 /* UITableViewCellsExtension.swift in Sources */,
 				F425F1362158CE0600D268D0 /* BottleCVC.swift in Sources */,
-				053519F6212A659E007ADC68 /* DoneToolBarWithoutIQ.swift in Sources */,
-				053519F4212A659E007ADC68 /* UITabBarExtension.swift in Sources */,
 				05351A26212A65FF007ADC68 /* AlertConstants.swift in Sources */,
 				F425F12E2158C9B600D268D0 /* ProfileVC.swift in Sources */,
 				053519F7212A659E007ADC68 /* TextField+Methods.swift in Sources */,
 				053519FA212A659E007ADC68 /* UIViewIB.swift in Sources */,
-				053519ED212A659E007ADC68 /* DateExtension.swift in Sources */,
 				05351A35212A7155007ADC68 /* BottlesVC.swift in Sources */,
 				053519C2212A62F8007ADC68 /* AppDelegate.swift in Sources */,
 			);

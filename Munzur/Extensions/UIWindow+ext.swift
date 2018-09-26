@@ -3,13 +3,10 @@ import UIKit
 public extension UIWindow {
     /** @return Returns the current Top Most ViewController in hierarchy.   */
     public func topMostWindowController()->UIViewController? {
-        
         var topController = rootViewController
-        
         while let presentedController = topController?.presentedViewController {
             topController = presentedController
         }
-        
         return topController
     }
     

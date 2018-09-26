@@ -38,22 +38,4 @@ final class Utility {
             }
         }
     }
-    
-    /**
-     Method for a uiview for tableview header as per app designs
-     - parameter tableView: A UItablView object
-     - parameter title: A string to display in the header title
-     - parameter height: A CGFloat object for desired header height
-     */
-    static func viewForHeader(_ tableView: UITableView, title: String,
-                       height: CGFloat) -> UIView? {
-        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.width, height: height))
-        view.backgroundColor = .white
-        let label = UILabel(frame: CGRect(x: 8.5, y: 0, width: view.bounds.width - 8.5, height: height))
-        label.font = UIFont.custom(font: .regular, ofSize: 10)
-        label.text = title
-        label.textColor = UIColor.colorWithCodes(red: 41, green: 41, blue: 41, alpha: 1)
-        view.addSubview(label)
-        return view
-    }
 }

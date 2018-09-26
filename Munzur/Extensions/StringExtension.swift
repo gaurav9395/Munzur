@@ -2,7 +2,7 @@ import Foundation
 
 extension String {
     func alphabetsOnly(with string: String) -> String {
-        let allowed = "\(Validator.characterSet)\(Validator.characterSet.uppercased())\(Validator.NumberSet)"
+        let allowed = Validator.alphaNumeric
         var newString = self
         for char in self {
             if !allowed.contains(char) {

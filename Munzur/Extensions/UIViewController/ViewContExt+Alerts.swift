@@ -10,7 +10,7 @@ extension UIViewController {
      - parameter buttons: Comma seperated objects of AlertButton to be added to the alert controller
      */
     func showAlertControllerWith(title: AlertTitle = .appName, message: Messages,
-                       completionOnPresentationOfAlert:  NullableCompletion = nil,
+                       completionOnPresentationOfAlert: NullableCompletion = nil,
                        buttons: AlertButton...) {
         let alertController = UIAlertController(title: title.value, message: message.value, preferredStyle: UIAlertControllerStyle.alert)        
         for button in buttons {
