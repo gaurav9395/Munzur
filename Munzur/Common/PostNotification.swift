@@ -9,4 +9,3 @@ extension NSNotification.Name {
     static let refreshFeeds = NSNotification.Name(rawValue: "refreshFeedForCurrentUser")
     static let refreshChat = NSNotification.Name(rawValue: "refreschChatForNewMessages")
 }
-

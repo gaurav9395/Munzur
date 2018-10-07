@@ -5,10 +5,10 @@ enum Font {
     
     var value: String {
         switch self {
-        case .regular: return "adineuePRO-Regular"
-        case .bold: return "adineuePRO-Bold"
-        case .light: return "adineuePRO-Light"
-        case .black: return "adineuePRO-Black"
+        case .regular: return "Poppins-Regular"
+        case .bold: return "Poppins-Bold"
+        case .light: return "Poppins-Light"
+        case .black: return "Poppins-Black"
         }
     }
 }

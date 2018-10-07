@@ -17,7 +17,7 @@ class BottleCVC: UICollectionViewCell {
     @IBOutlet weak var viewLower: UIView!
     weak var delegate: BottleCVCDelegate?
     
-    var index: Int = 0 {
+    var data: (index: Int, bottle: Bottle)! {
         willSet{}
     }
     
@@ -27,6 +27,6 @@ class BottleCVC: UICollectionViewCell {
     
     // MARK : - Button actions
     @IBAction func actionSeeDetails() {
-        delegate?.seeDetailsTapped(at: index)
+        delegate?.seeDetailsTapped(at: data.index)
     }
 }

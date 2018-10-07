@@ -10,9 +10,9 @@ import UIKit
 
 class BottlesDetailsVC: UIViewController {
 
+    var bottle = Bottle()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
 }

@@ -12,7 +12,8 @@ extension UIViewController {
     func showAlertControllerWith(title: AlertTitle = .appName, message: Messages,
                        completionOnPresentationOfAlert: NullableCompletion = nil,
                        buttons: AlertButton...) {
-        let alertController = UIAlertController(title: title.value, message: message.value, preferredStyle: UIAlertControllerStyle.alert)        
+        let alertController = UIAlertController(title: title.value, message: message.value,
+                                                preferredStyle: UIAlertControllerStyle.alert)        
         for button in buttons {
             let buttonStyle = buttons.count > 1 ? button.style : .default
             let alertAction = UIAlertAction(title: button.name, style: buttonStyle) { _ in

@@ -12,16 +12,22 @@ class BottlesVC: UIViewController {
 
     @IBOutlet weak var clctionView: UICollectionView!
     
+    var bottles = [Bottle]() {
+        didSet {
+            clctionView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         clctionView.register(cells: BottleCVC.self)
-        clctionView.reloadData()
+        Bottle.available { self.bottles = $0 }
     }
 }
 
 extension BottlesVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return bottles.count
     }
     
     func collectionView(_ collectionView: UICollectionView,

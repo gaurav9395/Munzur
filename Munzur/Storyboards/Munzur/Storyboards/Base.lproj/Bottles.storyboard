@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qo7-Ib-CP6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="qo7-Ib-CP6">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,8 +24,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gqG-1B-mPc">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-TD-Ij1">
-                                                <rect key="frame" x="112.5" y="0.0" width="150" height="44"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="0GW-TD-Ij1">
+                                                <rect key="frame" x="137.5" y="0.0" width="100" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="8Bc-aQ-KYn"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,9 +46,24 @@
                                     <constraint firstAttribute="trailing" secondItem="gqG-1B-mPc" secondAttribute="trailing" id="IM6-Oo-LVO"/>
                                     <constraint firstItem="gqG-1B-mPc" firstAttribute="leading" secondItem="dAI-VD-sz0" secondAttribute="leading" id="Zl1-RT-7cd"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.16" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="lzT-We-Dyl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="8" minimumInteritemSpacing="8" id="XbO-Jm-Q15">
                                     <size key="itemSize" width="359" height="150"/>
@@ -114,7 +131,7 @@
                         <constraints>
                             <constraint firstItem="dAI-VD-sz0" firstAttribute="leading" secondItem="nF4-0l-w7O" secondAttribute="leading" id="0o2-kY-Li2"/>
                             <constraint firstItem="nF4-0l-w7O" firstAttribute="top" secondItem="gqG-1B-mPc" secondAttribute="top" id="0wx-GR-Fq2"/>
-                            <constraint firstItem="lzT-We-Dyl" firstAttribute="top" secondItem="dAI-VD-sz0" secondAttribute="bottom" id="C9K-ot-SVe"/>
+                            <constraint firstItem="lzT-We-Dyl" firstAttribute="top" secondItem="dAI-VD-sz0" secondAttribute="bottom" constant="8" symbolic="YES" id="C9K-ot-SVe"/>
                             <constraint firstItem="nF4-0l-w7O" firstAttribute="trailing" secondItem="dAI-VD-sz0" secondAttribute="trailing" id="WOG-bP-lyg"/>
                             <constraint firstItem="nF4-0l-w7O" firstAttribute="bottom" secondItem="lzT-We-Dyl" secondAttribute="bottom" id="gbm-Cb-puG"/>
                             <constraint firstItem="dAI-VD-sz0" firstAttribute="top" secondItem="QTd-Gy-BI5" secondAttribute="top" id="hj9-PS-sln"/>
@@ -147,8 +164,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrY-JJ-Mgf">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="7Eu-4a-hca">
-                                                <rect key="frame" x="112.5" y="0.0" width="150" height="44"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7Eu-4a-hca">
+                                                <rect key="frame" x="137.5" y="0.0" width="100" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="lJj-wr-eDI"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZZ-dt-L35">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -179,9 +199,24 @@
                                     <constraint firstAttribute="trailing" secondItem="UrY-JJ-Mgf" secondAttribute="trailing" id="noG-o5-9Af"/>
                                     <constraint firstAttribute="bottom" secondItem="UrY-JJ-Mgf" secondAttribute="bottom" id="xpV-pT-dWE"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.16" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyBottleBig" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-fF-Psk">
-                                <rect key="frame" x="129" y="209.5" width="116" height="148"/>
+                                <rect key="frame" x="13" y="60.5" width="349" height="446"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25ml pouch of drinking water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp1-aW-KfA">
                                 <rect key="frame" x="16" y="601" width="343" height="16"/>
@@ -229,8 +264,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="dummyBottleBig" width="116" height="148"/>
-        <image name="images" width="150" height="84"/>
-        <image name="left-arrow" width="21" height="21"/>
+        <image name="dummyBottleBig" width="349" height="446"/>
+        <image name="left-arrow" width="32" height="32"/>
+        <image name="logo" width="870" height="468"/>
     </resources>
 </document>

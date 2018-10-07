@@ -19,3 +19,10 @@ public extension UIWindow {
         return currentViewController
     }
 }
+
+// MARK : - Status Bar Extension
+extension UIApplication {
+    var statusBarView: UIView? {
+        return value(forKey: "statusBar") as? UIView
+    }
+}

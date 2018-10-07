@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0hf-Ox-WvO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0hf-Ox-WvO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,8 +24,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uX-Sg-O7T">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-YX-dZ2">
-                                                <rect key="frame" x="112.5" y="0.0" width="150" height="44"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Zji-YX-dZ2">
+                                                <rect key="frame" x="137.5" y="0.0" width="100" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="xkm-R5-4PS"/>
+                                                </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,9 +46,24 @@
                                     <constraint firstAttribute="trailing" secondItem="6uX-Sg-O7T" secondAttribute="trailing" id="WfW-ZG-1n4"/>
                                     <constraint firstItem="6uX-Sg-O7T" firstAttribute="leading" secondItem="Qle-jH-yt1" secondAttribute="leading" id="oGd-3f-mpV"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.16" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eNT-Xd-cRB">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35n-B5-SDN">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="394.5"/>
@@ -86,7 +103,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACg-jj-Bbl">
-                                                                                <rect key="frame" x="80" y="22.5" width="255" height="16"/>
+                                                                                <rect key="frame" x="80" y="22" width="255" height="16"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" red="0.1803921568627451" green="0.20392156862745098" blue="0.6705882352941176" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -141,7 +158,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Serviceable Areas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPl-fo-uSF">
-                                                                                <rect key="frame" x="80" y="22.5" width="255" height="16"/>
+                                                                                <rect key="frame" x="80" y="22" width="255" height="16"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -241,7 +258,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJ4-7R-kr2">
-                                                                                <rect key="frame" x="80" y="22.5" width="255" height="16"/>
+                                                                                <rect key="frame" x="80" y="22" width="255" height="16"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -293,7 +310,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-2Z-kfG">
-                                                                                <rect key="frame" x="80" y="22.5" width="255" height="16"/>
+                                                                                <rect key="frame" x="80" y="22" width="255" height="16"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -344,7 +361,7 @@
                                                                                 </constraints>
                                                                             </imageView>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5IQ-cm-2aC">
-                                                                                <rect key="frame" x="80" y="22.5" width="255" height="16"/>
+                                                                                <rect key="frame" x="80" y="22" width="255" height="16"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -438,7 +455,7 @@
                             <constraint firstItem="2Zn-DS-jln" firstAttribute="bottom" secondItem="eNT-Xd-cRB" secondAttribute="bottom" id="3SZ-A3-zEv"/>
                             <constraint firstItem="Qle-jH-yt1" firstAttribute="leading" secondItem="2Zn-DS-jln" secondAttribute="leading" id="Bav-vH-shQ"/>
                             <constraint firstItem="35n-B5-SDN" firstAttribute="width" secondItem="qdI-6w-jcs" secondAttribute="width" id="LHW-Le-pjH"/>
-                            <constraint firstItem="eNT-Xd-cRB" firstAttribute="top" secondItem="Qle-jH-yt1" secondAttribute="bottom" id="M8V-ci-m6Y"/>
+                            <constraint firstItem="eNT-Xd-cRB" firstAttribute="top" secondItem="Qle-jH-yt1" secondAttribute="bottom" constant="8" symbolic="YES" id="M8V-ci-m6Y"/>
                             <constraint firstItem="Qle-jH-yt1" firstAttribute="top" secondItem="qdI-6w-jcs" secondAttribute="top" id="QVN-zh-ij6"/>
                             <constraint firstItem="2Zn-DS-jln" firstAttribute="trailing" secondItem="eNT-Xd-cRB" secondAttribute="trailing" id="Rs0-lb-Lmq"/>
                             <constraint firstItem="Qle-jH-yt1" firstAttribute="trailing" secondItem="2Zn-DS-jln" secondAttribute="trailing" id="Xpj-6C-SkU"/>
@@ -467,8 +484,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRK-wU-Jbo">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Gh-7dx">
-                                                <rect key="frame" x="112.5" y="0.0" width="150" height="44"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hGK-Gh-7dx">
+                                                <rect key="frame" x="137.5" y="0.0" width="100" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="jpg-Cc-HaN"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y8a-h4-t1e">
                                                 <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
@@ -499,6 +519,21 @@
                                     <constraint firstItem="oRK-wU-Jbo" firstAttribute="leading" secondItem="oeg-5W-QCg" secondAttribute="leading" id="oTo-Uw-u3I"/>
                                     <constraint firstAttribute="trailing" secondItem="oRK-wU-Jbo" secondAttribute="trailing" id="pLY-fh-vtD"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="0.16" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="man" translatesAutoresizingMaskIntoConstraints="NO" id="UGE-XG-CWV">
                                 <rect key="frame" x="127.5" y="253.5" width="120" height="120"/>
@@ -580,13 +615,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about" width="30" height="30"/>
-        <image name="images" width="150" height="84"/>
-        <image name="left-arrow" width="21" height="21"/>
-        <image name="logout" width="30" height="30"/>
-        <image name="man" width="170" height="170"/>
-        <image name="pin" width="30" height="30"/>
-        <image name="profile" width="30" height="30"/>
-        <image name="share" width="30" height="30"/>
+        <image name="about" width="48" height="48"/>
+        <image name="left-arrow" width="32" height="32"/>
+        <image name="logo" width="870" height="468"/>
+        <image name="logout" width="48" height="48"/>
+        <image name="man" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="pin" width="48" height="48"/>
+        <image name="profile" width="48" height="48"/>
+        <image name="share" width="48" height="48"/>
     </resources>
 </document>

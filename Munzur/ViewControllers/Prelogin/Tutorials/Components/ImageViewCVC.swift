@@ -16,5 +16,4 @@ class ImageViewCVC: UICollectionViewCell {
             imgView.image = newValue
         }
     }
-    
 }

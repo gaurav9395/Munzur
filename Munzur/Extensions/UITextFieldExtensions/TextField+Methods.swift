@@ -2,7 +2,7 @@ import UIKit
 
 extension UITextField {
     var isBlank: Bool {
-        return (self.text ?? "").trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
+        return trimmedText.isEmpty
     }
     
     var trimmedText: String {
@@ -48,7 +48,7 @@ extension UITextField {
     }
 }
 
-//MARK:- Password accessoryView
+// MARK : - Password accessoryView
 extension UITextField {
     func showPasswordAccessoryWith(black color: Bool) {
         let accessory = UIButton(frame: CGRect(x: 0, y: 0, width: 25, height: 25))

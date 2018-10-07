@@ -1,6 +1,6 @@
 import UIKit
 
-//MARK:- Collection/TableView cells
+// MARK : - Collection/TableView cells
 extension UITableViewCell {
     static var identifier: String {
         return "\(self)"

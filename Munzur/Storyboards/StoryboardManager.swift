@@ -9,7 +9,7 @@
 import UIKit
 
 enum Storyboard : String {
-    case main, prelogin
+    case main, prelogin, bottles, more
     
     var instance : UIStoryboard {
         return UIStoryboard(name: rawValue.capitalized, bundle: Bundle.main)

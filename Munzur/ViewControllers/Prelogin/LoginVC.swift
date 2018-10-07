@@ -9,10 +9,43 @@
 import UIKit
 
 class LoginVC: UIViewController {
-
+    @IBOutlet weak var txtFldNumber: UITextField!
+    @IBOutlet weak var txtFldCountry: UITextField!
+    @IBOutlet weak var txtFldPass: UITextField!
 
     @IBAction func actionLogin() {
-        AppDelegate.shared.redirectToHome()
+        validateAndProceed()
+    }
+    
+    private func validateAndProceed() {
+        if txtFldNumber.isBlank {
+            showAlertControllerWith(message: .phoneRequired, buttons: .ok(nil))
+        } else if txtFldPass.isBlank {
+            showAlertControllerWith(message: .passEmpty, buttons: .ok(nil))
+        } else {
+            prepareParamsAndProceed()
+        }
+    }
+    
+    private func prepareParamsAndProceed() {
+        let params = [
+            "pwd": txtFldPass.trimmedText,
+            "contactno": txtFldNumber.trimmedText,
+            "modelName": "iPhone",
+            "deviceid": "uuid",
+            "devicetype": "ios"
+        ]
+        signupUser(with: params)
+    }
+    
+    private func signupUser(with params: [String: Any]) {
+        WebService.shared.requestFor(api: .signin(params)) { (status, code, data, message) in
+            if status {
+                AppDelegate.shared.redirectToHome()
+            } else {
+                self.showAlertControllerWith(message: .custom(message), buttons: .ok(nil))
+            }
+        }
     }
 }
 

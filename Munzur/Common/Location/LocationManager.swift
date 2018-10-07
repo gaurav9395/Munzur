@@ -24,7 +24,7 @@ final class Location: NSObject {
     
     var delegate: LocationDelegate?
 
-    //MARK:- Private methods
+    // MARK : - Private methods
     private func configureManager() {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers
@@ -63,7 +63,7 @@ final class Location: NSObject {
         }
     }
     
-    //MARK:- Public methods
+    // MARK : - Public methods
     func startUpdating() {
         if  Bundle.main.object(forInfoDictionaryKey:
             "NSLocationWhenInUseUsageDescription") != nil {
@@ -78,7 +78,7 @@ final class Location: NSObject {
     
 }
 
-//MARK:- LocationManager delegates
+// MARK : - LocationManager delegates
 extension Location: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
