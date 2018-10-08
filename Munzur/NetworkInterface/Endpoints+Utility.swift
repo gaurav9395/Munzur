@@ -3,7 +3,7 @@ import Alamofire
 extension Endpoints: URLRequestConvertible {
     var encoding: ParameterEncoding {
         switch method {
-        default: return JSONEncoding.default
+        default: return URLEncoding.queryString
         }
     }
     

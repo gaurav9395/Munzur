@@ -1,12 +1,12 @@
 import Foundation
 
 enum UserDefaultConstants {
-    case deviceToken, loginToken, lattitude, longitude
+    case deviceToken, userId, lattitude, longitude
 
     var value: String {
         switch self {
         case .deviceToken: return "deviceTokenSavedWhileRegisteringForPushNotifications"
-        case .loginToken: return "usersLoginTokkenSavedWhileLoggingin"
+        case .userId: return "usersIdentificationNumber"
         case .lattitude: return "lattitudesOfUsersCurrentLocation"
         case .longitude: return "longitudesOfUsersCurrentLocation"
         }

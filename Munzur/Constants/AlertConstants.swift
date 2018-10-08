@@ -21,7 +21,7 @@ enum AlertTitle {
 enum Messages {
     case custom(String), internetError, serverError, emailInvalid,
     passEmpty, nameRequired, confirmMatch, phoneRequired, cameraSupport, location, countryRequired,
-    addressRequired
+    addressRequired, sureLogout
     
     var value: String {
         switch self {
@@ -37,6 +37,7 @@ enum Messages {
         case .location: return "Please allow location from settings"
         case .countryRequired: return "Please enter your country"
         case .addressRequired: return "Please enter your current address"
+        case .sureLogout: return "Do you want to logout?"
         }
     }
 }

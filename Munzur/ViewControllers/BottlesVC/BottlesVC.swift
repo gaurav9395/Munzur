@@ -22,6 +22,13 @@ class BottlesVC: UIViewController {
         clctionView.register(cells: BottleCVC.self)
         Bottle.available { self.bottles = $0 }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == BottlesDetailsVC.storyboardId,
+            let bottle = sender as? Bottle {
+            (segue.destination as! BottlesDetailsVC).bottle = bottle
+        }
+    }
 }
 
 extension BottlesVC: UICollectionViewDataSource {
@@ -37,6 +44,7 @@ extension BottlesVC: UICollectionViewDataSource {
             return cell
         } else {
             let cell = BottleCVC.dequeReusablyFor(collectionView, at: indexPath)
+            cell.data = (indexPath.item - 1, bottles[indexPath.item - 1])
             cell.delegate = self
             return cell
         }
@@ -53,6 +61,6 @@ extension BottlesVC: UICollectionViewDelegateFlowLayout {
 
 extension BottlesVC: BottleCVCDelegate {
     func seeDetailsTapped(at index: Int) {
-        performSegue(withIdentifier: BottlesDetailsVC.storyboardId, sender: nil)
+        performSegue(withIdentifier: BottlesDetailsVC.storyboardId, sender: bottles[index])
     }
 }

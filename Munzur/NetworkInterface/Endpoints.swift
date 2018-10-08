@@ -3,15 +3,18 @@ import Alamofire
 
 enum Endpoints {
     private var base: String {
-        return "http://ec2-18-191-231-1.compute-1.amazonaws.com:6789/"
+        return "http://ec2-18-191-231-1.us-east-2.compute.amazonaws.com:4567/"
     }
     
-    case signup(Parameters), signin(Parameters)
+    case signup(Parameters), signin(Parameters), profile(userId: Int), base, bottles
     
     var url: String {
         switch self {
         case .signup: return "\(base)signup"
         case .signin: return "\(base)login"
+        case .profile(userId: let id): return "\(base)userProfile?userid=\(id)"
+        case .base: return base
+        case .bottles: return "\(base)getBottleInfo"
         }
     }
 

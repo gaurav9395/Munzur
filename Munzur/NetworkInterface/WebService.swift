@@ -29,10 +29,11 @@ final class WebService {
         }
         
         printRequest(api)
-        Alamofire.request(api.url, method: api.method, parameters: api.parameters, encoding: api.encoding, headers: api.header).responseJSON { (response) in
-            self.handle(response, responseClosure: { (result, code, data, message)  in
-                responseClosure(result, code, data, message)
-            })
+        Alamofire.request(api.url, method: api.method, parameters: api.parameters,
+                          encoding: api.encoding, headers: api.header).responseJSON { (response) in
+                            self.handle(response, responseClosure: { (result, code, data, message)  in
+                                responseClosure(result, code, data, message)
+                            })
         }
     }
     
@@ -65,17 +66,18 @@ final class WebService {
         var url = try! URLRequest.init(url: api.url, method: api.method, headers: api.header)
         url.timeoutInterval = 180
         //Make a request to upload the data to server
-        Alamofire.upload(multipartFormData: prepareMultipartFormdata(api, imgMedia, videoMedia, audioMedia), with: url) { (encodingResult) in
-            switch encodingResult {
-            case .success(let upload,_,_):
-                upload.responseJSON(completionHandler: { (response) in
-                    self.handle(response, responseClosure: { (result, code, data, message) in
-                        responseClosure(result, code, data, message)
-                    })
-                })
-            case .failure(let error):
-                self.failureHandler.handle(error: error)
-            }
+        Alamofire.upload(multipartFormData: prepareMultipartFormdata(api, imgMedia, videoMedia, audioMedia),
+                         with: url) { (encodingResult) in
+                            switch encodingResult {
+                            case .success(let upload,_,_):
+                                upload.responseJSON(completionHandler: { (response) in
+                                    self.handle(response, responseClosure: { (result, code, data, message) in
+                                        responseClosure(result, code, data, message)
+                                    })
+                                })
+                            case .failure(let error):
+                                self.failureHandler.handle(error: error)
+                            }
         }
     }
 }
@@ -97,26 +99,14 @@ extension WebService {
         switch response.result {
         case .success(_):
             if let data = response.result.value as? NSDictionary {
-                if let statusCode = response.response?.statusCode {
-                    switch statusCode {
-                    case 200, 400:
-                        var message = String()
-                        if let msg = data.value(forKeyPath: "error.message") as? String {
-                            message = msg
-                        } else if let msg = data["message"] as? String {
-                            message = msg
-                        } else if let msg = data.value(forKeyPath: "error.msg") as? String {
-                            message = msg
-                        }
-                        
-                        Indicator.shared.hide()
-                        responseClosure(statusCode == 200, statusCode, data, message)
-                    default:
-                        failureHandler.handle(json: data, code: statusCode)
-                        responseClosure(false, statusCode, data, "")
-                    }
+                let message = data["reason"] as? String ??
+                    data["result"] as? String ?? ""
+                Indicator.shared.hide()
+                if let status = data["status"] as? String,
+                    status == "success" {
+                    responseClosure(true, 200, data, message)
                 } else {
-                    responseClosure(false, 00, data, "")
+                    responseClosure(false, 00, data, message)
                 }
             }
         case .failure(let error):
@@ -133,7 +123,8 @@ extension WebService {
             formdata in
             if let params = api.parameters {
                 for (key, value) in params {
-                    formdata.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!, withName: key)
+                    formdata.append((value as AnyObject).data(using: String.Encoding.utf8.rawValue)!,
+                                    withName: key)
                 }
             }
             if let images = imgMedia {
@@ -141,7 +132,8 @@ extension WebService {
                     let interval = NSDate().timeIntervalSince1970 * 1000
                     let imgMimeType : String = "image/jpeg"
                     let imgFileName = "img\(interval).jpeg"
-                    formdata.append(value, withName: key, fileName: imgFileName, mimeType: imgMimeType)
+                    formdata.append(value, withName: key, fileName: imgFileName,
+                                    mimeType: imgMimeType)
                 }
             }
             if let audios = audioMedia {
@@ -149,7 +141,8 @@ extension WebService {
                     let interval = NSDate().timeIntervalSince1970 * 1000
                     let audioMimeType = "audio/mpeg"
                     let audioFileName = "audio\(interval).mp3"
-                    formdata.append(value, withName: key, fileName: audioFileName, mimeType: audioMimeType)
+                    formdata.append(value, withName: key, fileName: audioFileName,
+                                    mimeType: audioMimeType)
                 }
             }
             if let videos = videoMedia {
@@ -157,7 +150,8 @@ extension WebService {
                     let interval = NSDate().timeIntervalSince1970 * 1000
                     let videoMimeType = "video/mp4"
                     let videoFileName = "vid\(interval).mp4"
-                    formdata.append(value, withName: key, fileName: videoFileName, mimeType: videoMimeType)
+                    formdata.append(value, withName: key, fileName: videoFileName,
+                                    mimeType: videoMimeType)
                 }
             }
         }

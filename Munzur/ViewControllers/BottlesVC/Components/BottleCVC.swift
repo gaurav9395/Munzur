@@ -14,11 +14,21 @@ protocol BottleCVCDelegate: class {
 
 class BottleCVC: UICollectionViewCell {
 
+    @IBOutlet weak var imgViewBottle: UIImageView!
     @IBOutlet weak var viewLower: UIView!
+    @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var lblInfo: UILabel!
+
+    
     weak var delegate: BottleCVCDelegate?
     
     var data: (index: Int, bottle: Bottle)! {
-        willSet{}
+        willSet{
+            imgViewBottle.sd_setImage(with: URL(string: newValue.bottle.imgurl),
+                                       placeholderImage: UIImage(named: "logo"))
+            lblInfo.text = newValue.bottle.info.removingPercentEncoding
+            lblName.text = newValue.bottle.name
+        }
     }
     
     override func awakeFromNib() {

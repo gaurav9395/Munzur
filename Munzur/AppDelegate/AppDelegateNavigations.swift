@@ -9,14 +9,34 @@
 import UIKit
 
 extension AppDelegate {
+    func handleInitialNavigation() {
+        if UserDefaultsManager.userId != nil {
+            redirectToHome()
+        } else {
+            redirectToTutorial()
+        }
+    }
+    
     func redirectToHome() {
         let dashboardVC = Storyboard.main.instance.instantiateInitialViewController()!
         setRootView(controller: dashboardVC)
     }
     
-    func redirectToLogin() {
+    private func redirectToLogin() {
+        let loginVC = LoginVC.instantiateFrom(storyboard: .prelogin)
+        let navigation = UINavigationController(rootViewController: loginVC)
+        navigation.isNavigationBarHidden = true
+        setRootView(controller: navigation)
+    }
+    
+    private func redirectToTutorial() {
         let loginVC = Storyboard.prelogin.instance.instantiateInitialViewController()!
         setRootView(controller: loginVC)
+    }
+    
+    func sessionExpired() {
+        UserDefaultsManager.userId = nil
+        redirectToLogin()
     }
     
     private func setRootView(controller: UIViewController) {

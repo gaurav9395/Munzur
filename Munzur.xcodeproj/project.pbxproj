@@ -75,6 +75,7 @@
 		F425F1362158CE0600D268D0 /* BottleCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425F1342158CE0600D268D0 /* BottleCVC.swift */; };
 		F425F1372158CE0600D268D0 /* BottleCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F425F1352158CE0600D268D0 /* BottleCVC.xib */; };
 		F425F1392158D62F00D268D0 /* AdvertCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425F1382158D62F00D268D0 /* AdvertCVC.swift */; };
+		F489802F216BE25B003AE756 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489802E216BE25B003AE756 /* Profile.swift */; };
 		F4C6487721594C3E00C603D4 /* Bottles.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4C6487521594C3E00C603D4 /* Bottles.storyboard */; };
 		F4C6487921594C6D00C603D4 /* BottlesDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6487821594C6D00C603D4 /* BottlesDetailsVC.swift */; };
 		F4D90592216A7B690041FAE9 /* Bottle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D90591216A7B690041FAE9 /* Bottle.swift */; };
@@ -154,6 +155,8 @@
 		F425F1342158CE0600D268D0 /* BottleCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleCVC.swift; sourceTree = "<group>"; };
 		F425F1352158CE0600D268D0 /* BottleCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BottleCVC.xib; sourceTree = "<group>"; };
 		F425F1382158D62F00D268D0 /* AdvertCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertCVC.swift; sourceTree = "<group>"; };
+		F489802C216BC778003AE756 /* Munzur.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Munzur.entitlements; sourceTree = "<group>"; };
+		F489802E216BE25B003AE756 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F4C6487621594C3E00C603D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Munzur/Storyboards/Base.lproj/Bottles.storyboard; sourceTree = "<group>"; };
 		F4C6487821594C6D00C603D4 /* BottlesDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottlesDetailsVC.swift; sourceTree = "<group>"; };
 		F4D90591216A7B690041FAE9 /* Bottle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bottle.swift; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 		053519C0212A62F8007ADC68 /* Munzur */ = {
 			isa = PBXGroup;
 			children = (
+				F489802C216BC778003AE756 /* Munzur.entitlements */,
 				053519CD212A62FB007ADC68 /* Info.plist */,
 				053519D6212A6323007ADC68 /* Assets */,
 				053519D3212A6307007ADC68 /* AppDelegate */,
@@ -365,7 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				05E9E652212D1CA300395F60 /* MoreVC.swift */,
-				F425F12D2158C9B600D268D0 /* ProfileVC.swift */,
+				F489802D216BE24A003AE756 /* Profile */,
 			);
 			path = MoreVC;
 			sourceTree = "<group>";
@@ -464,6 +468,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F489802D216BE24A003AE756 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F425F12D2158C9B600D268D0 /* ProfileVC.swift */,
+				F489802E216BE25B003AE756 /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -499,6 +512,11 @@
 				TargetAttributes = {
 					053519BD212A62F8007ADC68 = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -669,6 +687,7 @@
 				053519FB212A659E007ADC68 /* UIViewUseful.swift in Sources */,
 				05351A22212A65FF007ADC68 /* PostNotification.swift in Sources */,
 				05351A1B212A65FF007ADC68 /* CommonMethods.swift in Sources */,
+				F489802F216BE25B003AE756 /* Profile.swift in Sources */,
 				F419A0392168740C006226F7 /* Endpoints.swift in Sources */,
 				F4C6487921594C6D00C603D4 /* BottlesDetailsVC.swift in Sources */,
 				05351A20212A65FF007ADC68 /* LocationManager.swift in Sources */,

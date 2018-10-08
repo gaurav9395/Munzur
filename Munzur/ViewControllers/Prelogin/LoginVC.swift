@@ -10,7 +10,6 @@ import UIKit
 
 class LoginVC: UIViewController {
     @IBOutlet weak var txtFldNumber: UITextField!
-    @IBOutlet weak var txtFldCountry: UITextField!
     @IBOutlet weak var txtFldPass: UITextField!
 
     @IBAction func actionLogin() {
@@ -41,6 +40,7 @@ class LoginVC: UIViewController {
     private func signupUser(with params: [String: Any]) {
         WebService.shared.requestFor(api: .signin(params)) { (status, code, data, message) in
             if status {
+                    UserDefaultsManager.userId = data["ID"] as? Int
                 AppDelegate.shared.redirectToHome()
             } else {
                 self.showAlertControllerWith(message: .custom(message), buttons: .ok(nil))

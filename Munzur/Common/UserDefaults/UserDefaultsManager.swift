@@ -17,16 +17,18 @@ final class UserDefaultsManager {
         }
     }
     
-    static var loginToken: String? {
+    static var userId: Int? {
         set {
-            set(value: newValue ?? "", forKey: .loginToken)
-        } get {
-            guard let token = UserDefaults.standard.string(forKey: UserDefaultConstants.loginToken.value) else {
-                return nil
+            guard let value = newValue else {
+                UserDefaults.standard.removeObject(forKey: UserDefaultConstants.userId.value)
+                return
             }
-            return token == "" ? nil : token
+            set(value: value, forKey: .userId)
+        } get {
+            return UserDefaults.standard.value(forKey: UserDefaultConstants.userId.value) as? Int
         }
     }
+    
     static var lattitude: String? {
         set {
             set(value: newValue ?? "", forKey: .lattitude)

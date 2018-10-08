@@ -34,7 +34,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="1xn-Wr-Zo4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="More" image="Image" id="G49-XU-oAQ">
-                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="15m-7u-KfE">
@@ -71,7 +71,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="pjm-1L-EVV" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Bottles" image="100145-200" id="TlT-Ge-YJS">
-                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageInsets" minX="0.0" minY="2" maxX="0.0" maxY="2"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-3"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OyV-CS-iI0">
@@ -90,7 +90,7 @@
             <objects>
                 <navigationController navigationBarHidden="YES" id="0MN-iK-WhF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" image="pin" id="yGf-fU-O0Y">
-                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageInsets" minX="0.0" minY="3" maxX="0.0" maxY="3"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-2"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Njk-An-mGt">

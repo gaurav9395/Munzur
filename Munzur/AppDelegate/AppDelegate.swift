@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
+import SDWebImage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,15 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         appConfigurations()
-        redirectToLogin()
+        handleInitialNavigation()
         return true
     }
     
     private func appConfigurations() {
-//        FirebaseApp.configure()
         window = UIWindow(frame: UIScreen.main.bounds)
-//        IQKeyboardManager.shared.enable = true
-//        IQKeyboardManager.shared.enableAutoToolbar = true
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = true
 //        GMSPlacesClient.provideAPIKey(Constants.googleKey)
 //        GMSServices.provideAPIKey(Constants.googleKey)
         setupStatusBar()

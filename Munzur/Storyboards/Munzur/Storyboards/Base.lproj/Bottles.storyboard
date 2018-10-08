@@ -9,6 +9,17 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Light.ttf">
+            <string>Poppins-Light</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--BottlesVC-->
         <scene sceneID="hvv-Qm-D2s">
@@ -215,41 +226,43 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showShadow" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dummyBottleBig" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-fF-Psk">
-                                <rect key="frame" x="13" y="60.5" width="349" height="446"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="400" verticalCompressionResistancePriority="400" image="dummyBottleBig" translatesAutoresizingMaskIntoConstraints="NO" id="jLV-fF-Psk">
+                                <rect key="frame" x="20" y="104" width="335" height="391"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25ml pouch of drinking water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp1-aW-KfA">
-                                <rect key="frame" x="16" y="601" width="343" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="munzur" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L6l-1K-dnY">
-                                <rect key="frame" x="16" y="510" width="343" height="23"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <rect key="frame" x="16" y="535" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.25 Liters" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zLS-aC-o8v">
-                                <rect key="frame" x="16" y="563" width="343" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <rect key="frame" x="16" y="586" width="343" height="21"/>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="15"/>
                                 <color key="textColor" red="0.18039215689999999" green="0.20392156859999999" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25ml pouch of drinking water" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kp1-aW-KfA">
+                                <rect key="frame" x="16" y="627" width="343" height="20"/>
+                                <fontDescription key="fontDescription" name="Poppins-Light" family="Poppins" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gGK-M2-bOm" firstAttribute="bottom" secondItem="kp1-aW-KfA" secondAttribute="bottom" constant="50" id="5Ja-wv-AS9"/>
+                            <constraint firstItem="jLV-fF-Psk" firstAttribute="leading" secondItem="gGK-M2-bOm" secondAttribute="leading" constant="20" id="82U-hw-2ob"/>
                             <constraint firstItem="L6l-1K-dnY" firstAttribute="trailing" secondItem="zLS-aC-o8v" secondAttribute="trailing" id="G0J-TQ-qpv"/>
+                            <constraint firstItem="gGK-M2-bOm" firstAttribute="bottom" secondItem="kp1-aW-KfA" secondAttribute="bottom" constant="20" id="ONb-vD-Axe"/>
                             <constraint firstItem="gGK-M2-bOm" firstAttribute="trailing" secondItem="kp1-aW-KfA" secondAttribute="trailing" constant="16" id="OsW-nG-g9v"/>
                             <constraint firstItem="L6l-1K-dnY" firstAttribute="leading" secondItem="zLS-aC-o8v" secondAttribute="leading" id="Q6d-Ck-dV7"/>
                             <constraint firstItem="kp1-aW-KfA" firstAttribute="leading" secondItem="gGK-M2-bOm" secondAttribute="leading" constant="16" id="Wwy-iH-FMu"/>
+                            <constraint firstItem="gGK-M2-bOm" firstAttribute="trailing" secondItem="jLV-fF-Psk" secondAttribute="trailing" constant="20" id="XBn-Za-RnP"/>
                             <constraint firstItem="kp1-aW-KfA" firstAttribute="top" secondItem="zLS-aC-o8v" secondAttribute="bottom" constant="20" id="YjD-gY-56T"/>
                             <constraint firstItem="TR0-of-l4u" firstAttribute="leading" secondItem="gGK-M2-bOm" secondAttribute="leading" id="bCn-iK-vHu"/>
                             <constraint firstItem="gGK-M2-bOm" firstAttribute="top" secondItem="UrY-JJ-Mgf" secondAttribute="top" id="eRk-8Y-o3w"/>
                             <constraint firstItem="TR0-of-l4u" firstAttribute="trailing" secondItem="gGK-M2-bOm" secondAttribute="trailing" id="fny-3E-J0k"/>
-                            <constraint firstItem="jLV-fF-Psk" firstAttribute="centerX" secondItem="zwT-id-bhz" secondAttribute="centerX" id="i4E-Gk-cMn"/>
-                            <constraint firstItem="jLV-fF-Psk" firstAttribute="centerY" secondItem="zwT-id-bhz" secondAttribute="centerY" constant="-50" id="jkF-xh-H2k"/>
+                            <constraint firstItem="jLV-fF-Psk" firstAttribute="top" secondItem="TR0-of-l4u" secondAttribute="bottom" constant="40" id="kUT-8I-06D"/>
+                            <constraint firstItem="L6l-1K-dnY" firstAttribute="top" secondItem="jLV-fF-Psk" secondAttribute="bottom" constant="40" id="lYH-HW-2sX"/>
                             <constraint firstItem="zLS-aC-o8v" firstAttribute="trailing" secondItem="kp1-aW-KfA" secondAttribute="trailing" id="leC-pr-vYI"/>
                             <constraint firstItem="TR0-of-l4u" firstAttribute="top" secondItem="zwT-id-bhz" secondAttribute="top" id="nCF-um-u0r"/>
                             <constraint firstItem="zLS-aC-o8v" firstAttribute="leading" secondItem="kp1-aW-KfA" secondAttribute="leading" id="pIF-mK-4k4"/>
@@ -257,10 +270,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gGK-M2-bOm"/>
                     </view>
+                    <connections>
+                        <outlet property="imgViewBottle" destination="jLV-fF-Psk" id="GhE-Vg-DC4"/>
+                        <outlet property="lblCapacity" destination="zLS-aC-o8v" id="ckV-IV-yVm"/>
+                        <outlet property="lblInfo" destination="kp1-aW-KfA" id="0kZ-y1-QUh"/>
+                        <outlet property="lblName" destination="L6l-1K-dnY" id="6fA-f8-zDZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WkB-oo-y2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2228" y="-457"/>
+            <point key="canvasLocation" x="2228" y="-457.42128935532236"/>
         </scene>
     </scenes>
     <resources>
